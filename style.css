@@ -470,10 +470,6 @@ img {
     transform: translateY(-5px);
 }
 
-/* ===========================
-   TABLETS
-=========================== */
-
 @media (max-width: 992px) {
 
     .nav-container {
@@ -531,10 +527,6 @@ img {
     }
 }
 
-/* ===========================
-   MÓVILES
-=========================== */
-
 @media (max-width: 768px) {
 
     html {
@@ -562,8 +554,6 @@ img {
     .navbar {
         order: 2;
     }
-
-    /* MENU */
 
     .nav-links {
         position: absolute;
@@ -603,8 +593,6 @@ img {
         font-size: 1rem;
     }
 
-    /* BOTÓN HAMBURGUESA */
-
     .menu-toggle {
         display: flex;
         align-items: center;
@@ -625,13 +613,9 @@ img {
         cursor: pointer;
     }
 
-    /* OCULTAMOS CTA DESKTOP */
-
     .btn-primary {
         display: none;
     }
-
-    /* CONTADOR */
 
     .countdown {
         padding: 1.5rem 1rem;
@@ -650,8 +634,6 @@ img {
     .time-box span {
         font-size: 1.5rem;
     }
-
-    /* HERO */
 
     .hero {
         padding: 4rem 0;
@@ -691,15 +673,11 @@ img {
         max-width: 320px;
     }
 
-    /* TITULOS */
-
     .about h2,
     .section-title h2 {
         font-size: 2rem;
         text-align: center;
     }
-
-    /* PROGRAMA */
 
     .days-grid {
         grid-template-columns: 1fr;
@@ -711,13 +689,9 @@ img {
         margin-top: 1rem;
     }
 
-    /* ABOUT */
-
     .about-grid img {
         max-width: 280px;
     }
-
-    /* VALORES */
 
     .values-grid {
         grid-template-columns: 1fr;
@@ -731,8 +705,6 @@ img {
         width: 65px;
         height: 65px;
     }
-
-    /* CARRUSEL */
 
     .carousel {
         padding: 1rem 2.5rem;
@@ -748,8 +720,6 @@ img {
         font-size: 1rem;
     }
 
-    /* NOTICIAS */
-
     .news-grid {
         grid-template-columns: 1fr;
     }
@@ -758,8 +728,6 @@ img {
         height: 220px;
     }
 
-    /* PARTICIPANTES */
-
     .partners-grid {
         grid-template-columns: 1fr;
     }
@@ -767,8 +735,6 @@ img {
     .partner-card {
         padding: 1.5rem;
     }
-
-    /* FOOTER */
 
     .footer {
         padding: 3rem 0;
@@ -783,9 +749,63 @@ img {
     }
 }
 
-/* ===========================
-   MÓVILES PEQUEÑOS
-=========================== */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 4rem;
+    align-items: start;
+}
+
+.about-grid figure {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-grid figure img {
+    max-width: 180px;
+    width: 100%;
+}
+
+.about-grid h2 {
+    margin-bottom: 1rem;
+}
+
+.about-grid p {
+    line-height: 1.7;
+    margin-bottom: 0.7rem;
+}
+
+.about-grid article div[style] {
+    background: rgba(0, 182, 199, 0.12) !important;
+    color: #0a6cb5 !important;
+    border: 1px solid rgba(10, 108, 181, 0.15);
+    font-weight: 600;
+}
+
+.event-data strong {
+    color: #0a6cb5;
+    font-weight: 700;
+}
+
+.event-data p {
+    margin-bottom: 0.6rem;
+}
+
+.about-grid article {
+    align-self: start;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-grid figure {
+        order: -1;
+    }
+}
 
 @media (max-width: 480px) {
 
@@ -825,8 +845,6 @@ img {
         font-size: 1.7rem;
     }
 
-    /* CONTADOR */
-
     .time-box {
         min-width: 70px;
         padding: .7rem;
@@ -863,5 +881,25 @@ img {
     .partner-card img {
         width: 90px;
         height: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-grid article p {
+        text-align: justify;
+    }
+    
+    .logo img {
+        width: 160px !important;
+    }
+    
+    .event-data-group p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 120px !important;
     }
 }
