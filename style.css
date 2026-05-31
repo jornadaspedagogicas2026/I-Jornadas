@@ -756,6 +756,12 @@ img {
     align-items: start;
 }
 
+.about-grid figure img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
 .about-grid h2 {
     margin-bottom: 1rem;
 }
