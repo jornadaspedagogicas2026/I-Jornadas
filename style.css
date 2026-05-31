@@ -756,17 +756,6 @@ img {
     align-items: start;
 }
 
-.about-grid figure {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.about-grid figure img {
-    max-width: 180px;
-    width: 100%;
-}
-
 .about-grid h2 {
     margin-bottom: 1rem;
 }
