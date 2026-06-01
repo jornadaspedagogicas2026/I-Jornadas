@@ -767,7 +767,7 @@ img {
 
 .about-grid figure img {
     width: 100%;
-    max-width: 480px;   
+    max-width: 650px;   
     height: auto;
     object-fit: contain;
     display: block;
