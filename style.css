@@ -757,8 +757,8 @@ img {
 }
 
 .about-grid figure img {
-    width: 100%;
-    max-width: 400px;
+    width: 300%;
+    max-width: 600px;
     height: auto;
 }
 
