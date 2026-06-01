@@ -66,7 +66,7 @@ img {
 }
 
 .logo img {
-    width: 190px;
+    width: 260px;
     display: block;
 }
 
@@ -119,6 +119,7 @@ img {
             var(--blue-dark),
             var(--blue),
             var(--teal));
+
     color: white;
 }
 
@@ -136,52 +137,57 @@ img {
     color: white;
 }
 
-.countdown {
+.countdown{
     background: var(--gray);
     padding: 1.5rem 0;
     text-align: center;
 }
 
-.countdown p {
+.countdown p{
     font-weight: 600;
     color: var(--blue-dark);
     margin-bottom: 1rem;
 }
 
-.countdown-grid {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+.countdown-grid{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    flex-wrap:wrap;
 }
 
-.time-box {
-    background: white;
-    min-width: 110px;
-    padding: 1rem;
-    border-radius: 18px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+.time-box{
+    background:white;
+
+    min-width:110px;
+
+    padding:1rem;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
-.time-box span {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--blue);
+.time-box span{
+    display:block;
+
+    font-size:2rem;
+    font-weight:700;
+
+    color:var(--blue);
 }
 
-.time-box small {
-    color: #666;
-    font-weight: 600;
+.time-box small{
+    color:#666;
+    font-weight:600;
 }
 
-/* ===== BANNER CORREGIDO - SIN ESPACIO VACÍO ===== */
 .news-banner {
     width: 100%;
     height: 380px;
     overflow: hidden;
     position: relative;
-    margin-bottom: 0; /* ELIMINADO el margin-bottom */
+    margin-bottom: 0; 
 }
 
 .news-banner img {
@@ -203,7 +209,7 @@ img {
 
 .news-meta {
     display: flex;
-    margin-top: 1.5rem; /* REDUCIDO */
+    margin-top: 1.5rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
