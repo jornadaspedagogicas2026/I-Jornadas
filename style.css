@@ -66,7 +66,7 @@ img {
 }
 
 .logo img {
-    width: 200px;
+    width: 260px;
     display: block;
 }
 
@@ -288,9 +288,9 @@ img {
 }
 .about-grid {
     display: grid;
-    grid-template-columns: .8fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 4rem;
+    align-items: start;
 }
 
 .about-grid img {
@@ -476,8 +476,8 @@ img {
         gap: 1rem;
     }
 
-    .logo img {
-        width: 120px;
+   .logo img {
+        width: 180px; 
     }
 
     .hero {
@@ -548,7 +548,7 @@ img {
     }
 
     .logo img {
-        width: 95px;
+        width: 115px;
     }
 
     .navbar {
@@ -756,10 +756,19 @@ img {
     align-items: start;
 }
 
+.about-grid figure {
+    display: flex;          
+    justify-content: center;
+    align-items: center;     
+    width: 100%;
+}
+
 .about-grid figure img {
-    width: 300%;
-    max-width: 600px;
-    height: auto;
+    width: 100%;        
+    max-width: 550px;   
+    height: auto;       
+    display: block;
+    margin: 0 auto;     
 }
 
 .about-grid h2 {
@@ -813,7 +822,7 @@ img {
     }
 
     .logo img {
-        width: 75px;
+        width: 85px;
     }
 
     .logo span {
@@ -852,8 +861,6 @@ img {
     .time-box small {
         font-size: .8rem;
     }
-
-    /* CARRUSEL */
 
     .carousel {
         padding: 1rem 2rem;
@@ -896,5 +903,23 @@ img {
 @media (max-width: 480px) {
     .logo img {
         width: 120px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-grid figure img {
+        max-width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+    }
+    .about-grid figure {
+        order: -1; 
+    }
+    .about-grid figure img {
+        max-width: 70%; 
     }
 }
