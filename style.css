@@ -405,6 +405,28 @@ img {
     font-size: .95rem;
 }
 
+.news-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn-news {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    background: var(--blue-dark);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.btn-news:hover {
+    background: var(--blue);
+    transform: translateY(-2px);
+}
+
 /* Participantes y Aliados */
 .partners-grid {
     display: grid;
